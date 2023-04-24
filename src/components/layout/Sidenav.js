@@ -191,7 +191,7 @@ function Sidenav({ color }) {
             >
               {tables}
             </span>
-            <span className="label">Tables</span>
+            <span className="label">Tasks</span>
           </NavLink>
         </Menu.Item>
         <Menu.Item key="3">
@@ -207,6 +207,7 @@ function Sidenav({ color }) {
             <span className="label">Billing</span>
           </NavLink>
         </Menu.Item>
+
         <Menu.Item key="4">
           <NavLink to="/rtl">
             <span
@@ -217,9 +218,25 @@ function Sidenav({ color }) {
             >
               {rtl}
             </span>
-            <span className="label">RTL</span>
+            <span className="label">Calendar</span>
           </NavLink>
         </Menu.Item>
+
+
+        <Menu.Item key="4">
+          <NavLink to="/rtl">
+            <span
+              className="icon"
+              style={{
+                background: page === "rtl" ? color : "",
+              }}
+            >
+              {rtl}
+            </span>
+            <span className="label">Find a Care</span>
+          </NavLink>
+        </Menu.Item>
+
         <Menu.Item className="menu-item-header" key="5">
           Account Pages
         </Menu.Item>
